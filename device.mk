@@ -20,22 +20,6 @@ $(call inherit-product-if-exists, vendor/samsung/d2vzw/d2vzw-vendor.mk)
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/d2vzw/overlay
 
-# Kernel modules
-PRODUCT_COPY_FILES += \
-    device/samsung/d2vzw/modules/ansi_cprng.ko:/system/lib/modules/ansi_cprng.ko \
-    device/samsung/d2vzw/modules/btlock.ko:/system/lib/modules/btlock.ko \
-    device/samsung/d2vzw/modules/dhd.ko:/system/lib/modules/dhd.ko \
-    device/samsung/d2vzw/modules/dma_test.ko:/system/lib/modules/dma_test.ko \
-    device/samsung/d2vzw/modules/evbug.ko:/system/lib/modules/evbug.ko \
-    device/samsung/d2vzw/modules/gspca_main.ko:/system/lib/modules/gspca_main.ko \
-    device/samsung/d2vzw/modules/msm-buspm-dev.ko:/system/lib/modules/msm-buspm-dev.ko \
-    device/samsung/d2vzw/modules/qce40.ko:/system/lib/modules/qce40.ko \
-    device/samsung/d2vzw/modules/qcedev.ko:/system/lib/modules/qcedev.ko \
-    device/samsung/d2vzw/modules/qcrypto.ko:/system/lib/modules/qcrypto.ko \
-    device/samsung/d2vzw/modules/reset_modem.ko:/system/lib/modules/reset_modem.ko \
-    device/samsung/d2vzw/modules/scsi_wait_scan.ko:/system/lib/modules/scsi_wait_scan.ko \
-    device/samsung/d2vzw/modules/spidev.ko:/system/lib/modules/spidev.ko
-
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/d2-common/overlay-cdma
 
